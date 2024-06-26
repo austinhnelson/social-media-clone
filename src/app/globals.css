@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: #334155;
+  --background-color: #18181b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +32,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bg-primary {
+  background-color: var(--background-color);
+}
+
+.bg-main-accent {
+  background-color: var(--primary-color);
+}
+
+.border-main-accent {
+  border-color: var(--primary-color);
+}
+
+.hover\:text-primary:hover {
+  color: var(--primary-color);
 }
